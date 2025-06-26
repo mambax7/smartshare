@@ -2,7 +2,6 @@
 if (!defined('XOOPS_ROOT_PATH')) {
     exit();
 }
-// Normalize Publisher URLs if using path info
 if ($GLOBALS['xoops_dirname'] === 'publisher' && isset($_GET['itemid'])) {
     $GLOBALS['smartshare_override_url'] = XOOPS_URL . '/modules/publisher/item.php?itemid=' . (int)$_GET['itemid'];
 }
