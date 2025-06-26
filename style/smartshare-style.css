@@ -1,0 +1,27 @@
+.smartshare-follow-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.smartshare-follow-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.smartshare-follow-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 12px; /* Kun kolonne-gap – vi tar hånd om rad-gap på hvert element */
+}
+
+.smartshare-follow-link {
+  display: inline-block;
+  margin-bottom: 16px; /* Sørger for spacing mellom rader */
+}
+
+.smartshare-follow-icon {
+  width: 48px;
+  height: 48px;
+}
