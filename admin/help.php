@@ -1,4 +1,7 @@
 <?php
+
+$GLOBALS['xoopsOption']['template_main'] = 'smartshare_admin_help.tpl';
+
 include_once __DIR__ . '/../../../include/cp_header.php';
 xoops_cp_header();
 
@@ -9,6 +12,6 @@ $GLOBALS['xoopsTpl']->assign('xoops_module_header', '<style>
 .help-section li { margin-bottom: 8px; }
 </style>');
 
-$GLOBALS['xoopsOption']['template_main'] = 'smartshare_admin_help.tpl';
+
 
 require_once XOOPS_ROOT_PATH . '/footer.php';

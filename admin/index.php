@@ -1,4 +1,5 @@
 <?php
+$GLOBALS['xoopsOption']['template_main'] = 'smartshare_admin_index.tpl';
 include_once __DIR__ . '/../../../include/cp_header.php';
 xoops_cp_header();
 
@@ -12,6 +13,5 @@ $adminPreviewUrl = XOOPS_URL . '/modules/smartshare/admin/';
 $previewHtml = smartshare_build_icons($adminPreviewUrl);
 $GLOBALS['xoopsTpl']->assign('smartshare_icons', $previewHtml);
 
-$GLOBALS['xoopsOption']['template_main'] = 'smartshare_admin_index.tpl';
 require_once XOOPS_ROOT_PATH . '/footer.php';
 
