@@ -56,7 +56,7 @@ foreach ($platforms as $p) {
     define('_MI_SMARTSHARE_' . strtoupper($p), ss_icon($p, ucfirst($p)));
 }
 
-define('_MI_SMARTSHARE_MESSENGER', ss_icon('messenger', 'Messenger (Works for mobile only)'));
+//define('_MI_SMARTSHARE_MESSENGER', ss_icon('messenger', 'Messenger (Works for mobile only)'));
 
 // Tellervisning
 define('_MI_SMARTSHARE_SHOW_COUNTS', 'Show share counts');
@@ -79,4 +79,4 @@ foreach ($followPlatforms as $p) {
 define('_MI_SMARTSHARE_ICON_ORDER', 'Icon order');
 define('_MI_SMARTSHARE_ICON_ORDER_DESC', 'Comma-separated list of platforms in desired order.');
 define('_MI_SMARTSHARE_FOLLOW_ORDER', 'Social Profile Order');
-define('_MI_SMARTSHARE_ICON_ORDER_DESC', 'Comma-separated list of social platforms in the order you want them to appear.');
+//define('_MI_SMARTSHARE_ICON_ORDER_DESC', 'Comma-separated list of social platforms in the order you want them to appear.');
