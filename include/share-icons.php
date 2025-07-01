@@ -3,7 +3,9 @@ if (!defined('XOOPS_ROOT_PATH')) {
     exit();
 }
 // Fix for publisher sånn at både path info og itemid viser samme antall delinger
-if ($GLOBALS['xoops_dirname'] === 'publisher' && isset($_GET['itemid'])) {
+$moduleDirname = basename(dirname(dirname(__DIR__))); // f.eks. 'publisher' hvis du er i /modules/publisher/include/
+
+if ($moduleDirname === 'publisher' && isset($_GET['itemid'])) {
     $GLOBALS['smartshare_override_url'] = XOOPS_URL . '/modules/publisher/item.php?itemid=' . (int)$_GET['itemid'];
 }
 include_once XOOPS_ROOT_PATH . '/modules/smartshare/class/SmartshareCounts.php';
