@@ -23,7 +23,7 @@ function smartshare_build_icons()
 
     $urlRaw = $GLOBALS['smartshare_override_url'] ?? XOOPS_URL . $_SERVER['REQUEST_URI'];
     $url = urlencode($urlRaw);
-    $title = urlencode($GLOBALS['xoopsTpl']->get_template_vars('smartshare_title') ?? 'Check this out!');
+    $title = urlencode($GLOBALS['xoopsTpl']->getTemplateVars('smartshare_title') ?? 'Check this out!');
     $style = $config['icon_style'];
     $iconPath = XOOPS_URL . "/modules/smartshare/images/icons/" . $style . "/";
     $alignment = $config['alignment'] ?? 'center';
